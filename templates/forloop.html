@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ForLoop</title>
+    <style>
+        h1
+        {
+            color: blue;
+        }
+    </style>
 </head>
 <body style="background-color: burlywood;">
     <center>
-        <h1 style="color:blue">Printing Data by using For loop</h1>
+        <h1>Printing Data by using For loop</h1>
         <h2>The actual data is <h1 style="color: red;">{{name}}</h1></h2>
         {% for i in name %}
             <h2 style="background-color: aquamarine;color:red">{{i}} </h2>
+        {% endfor %}
+        <h1>Printing Numbers By using for loop </h1>
+        {% for num in numbers %}
+            <h2 style="background-color: darkslategray; color:white">{{num}}</h2>
         {% endfor %}
     </center>
 </body>
